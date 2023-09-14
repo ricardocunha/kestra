@@ -39,12 +39,12 @@
                     return this.flow.source;
                 }
 
-                return `id: hello-world
+                return `id: incentive-template
 namespace: dev
 tasks:
   - id: hello
     type: io.kestra.core.tasks.log.Log
-    message: Kestra team wishes you a great day! 👋`;
+    message: Zappyride team wishes you a great day! 👋`;
             },
             ...mapState("flow", ["flowGraph", "total"]),
             ...mapState("auth", ["user"]),

@@ -166,3 +166,22 @@ kestra:
     uri: https://api.kestra.io/v1/reports/usages
     initial-delay: 5m
     fixed-delay: 1h
+  repository:
+    type: mysql
+  storage:
+    type: local
+    local:
+      base-path: "/app/storage"
+  queue:
+    type: mysql
+  tasks:
+    tmp-dir:
+      path: /tmp/kestra-wd/tmp
+  url: http://localhost:8080/
+datasources:
+  mysql:
+    url: jdbc:mysql://localhost:3306/kestra
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    dialect: MYSQL
